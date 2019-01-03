@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">roundabout</string>
+    <string name="straight">直進率</string>
+    <string name="right">右折率</string>
+    <string name="left">左折率</string>
+    <string name="input1">流入量1</string>
+    <string name="input2">流入量2</string>
+    <string name="input3">流入量3</string>
+    <string name="input4">流入量4</string>
+
 </resources>
