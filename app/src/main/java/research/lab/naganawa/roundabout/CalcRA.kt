@@ -10,8 +10,8 @@ class CalcRA:AppCompatActivity(){
     public val tc = 4.1
     public val tau = 2.1
     public val branch = 4
-    public var entry: Array<Double> = arrayOf(0.0,0.0,0.0,0.0)
-    public var straight:Double=0.7
+    public var entry: Array<Double> = arrayOf(0.0)
+    public var straight = 0.7
     public var right = 0.2
     public var left = 0.1
     public var judge_data:Boolean = false
@@ -26,9 +26,9 @@ class CalcRA:AppCompatActivity(){
             right = Iright.text.toString().toDouble()
             left = Ileft.text.toString().toDouble()
             entry[0] = input1.text.toString().toDouble()
-            entry[1] = input2.text.toString().toDouble()
-            entry[2] = input3.text.toString().toDouble()
-            entry[3] = input4.text.toString().toDouble()
+            //entry[1] = input2.text.toString().toDouble()
+            //entry[2] = input3.text.toString().toDouble()
+            //entry[3] = input4.text.toString().toDouble()
 
             judge_data = Calculate()
             val fragment = ResultFragment.newInstance(judge_data)
@@ -61,7 +61,8 @@ class CalcRA:AppCompatActivity(){
             ans[i] = data / ci[i];
             i++
         }
-        if((ans[0] < 0.8) and (ans[1] < 0.8) and (ans[2] < 0.8) and (ans[3] < 0.8)) {
+        //if((ans[0] < 0.8) and (ans[1] < 0.8) and (ans[2] < 0.8) and (ans[3] < 0.8)) {
+        if(ans[0] < 0.8){
             judge = true
         }
         return judge

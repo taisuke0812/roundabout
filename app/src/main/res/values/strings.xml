@@ -7,5 +7,5 @@
     <string name="input2">流入量2</string>
     <string name="input3">流入量3</string>
     <string name="input4">流入量4</string>
-
+    <string name="input">最大流入量</string>
 </resources>
